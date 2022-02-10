@@ -1,13 +1,13 @@
-import React from 'react';
+const DateBuilder = (d) => {
+  let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satudray", "Sunday"];
 
-const DateBuilder = () => {
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-  const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satudray", "Sunday"]
+  let day = days[d.getDay()];
+  let date = d.getDate();
+  let month = months[d.getMonth()];
+  let year = d.getFullYear();
 
-  return (
-    <div>
-    </div>
-  );
+  return `${day} ${date} ${month} ${year}`;
 }
 
 export default DateBuilder;
