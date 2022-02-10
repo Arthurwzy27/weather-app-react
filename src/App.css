@@ -28,7 +28,8 @@ header {
 }
 
 .component-infos {
-  display: grid;
+  display: flex;
   grid-column: 3;
+  border: 3px solid yellow
 
 }

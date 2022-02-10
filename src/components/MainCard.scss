@@ -2,6 +2,7 @@ main {
   background-color: red;
   color: white;
 
-  h1 {
+  .weather-icon {
+    background-image: url(../img/few-cloud.png);
   }
 }

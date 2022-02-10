@@ -41,6 +41,8 @@ const App = () => {
 
           <div className="component-infos">
             <InfoCard />
+            <InfoCard />
+            <InfoCard />
             {/* InfosCard name= "Wind Speed" */}
             {/* InfosCard name= "Wind Direction" */}
             {/* InfosCard name= "Visibility" */}
