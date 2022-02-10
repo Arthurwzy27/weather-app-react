@@ -5,21 +5,25 @@ const Maincard = () => {
 
   const [lat, setLat] = useState('41.39')
   const [lon, setLon] = useState('2.15')
-  const [cityName, setCityName] = useState('')
+  const [location, setLocation] = useState('Barcelona')
+  // const [query, setquery] = useState('')
+  const [weather, setWeather] = useState({})
+  const base_url = "api.openweathermap.org/data/2.5/weather?"
 
 
   useEffect(() => {
-    fetch(`api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}`)
+    fetch(`${base_url}lat=${lat}&lon=${lon}&appid=${process.env.API_key}`)
     .then(res => res.json())
-    .then(data => setCityName(data.message))
+    .then(result => setLocation(result))
   },[lat, lon]);
 
 
   return(
     <div className="main">
 
-      <h1>City:</h1>
-      <p>{cityName}</p>
+      <h1>{location}</h1>
+      <p>Latitude: {lat} - Longitude: {lon}</p>
+      {/* <h2>{weather}</h2> */}
     </div>
   )
 };
