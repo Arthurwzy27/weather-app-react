@@ -33,13 +33,16 @@ const App = () => {
 
         <div className="secondary-card">
           <div className="secondry-header">
-            {/* ----------------DateBuilder---------------- */}
-              <div> {dateBuilder(new Date())} </div>
-            {/* ----------------SearchBar---------------- */}
-              <Search />
+            <div className="current-date">
+              {dateBuilder(new Date())}
+            </div>
+            <Search />
           </div>
 
           <div className="component-infos">
+            <InfoCard />
+            <InfoCard />
+            <InfoCard />
             <InfoCard />
             <InfoCard />
             <InfoCard />
@@ -55,7 +58,6 @@ const App = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

@@ -1,13 +1,15 @@
 .search-box {
-  width: 100%;
-  background-color: blue;
+  width: 40%;
+  padding-left: 10%;
 
   .search-bar {
-
-    border-radius: 5px;
-    // padding: 5px;
-    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(107, 106, 106);
+    border-radius: 6px;
+    padding-left: 15px;
+    width: 90%;
+    height: 1.7rem;
     outline: none;
-    border: none;
+    
   }
 }
