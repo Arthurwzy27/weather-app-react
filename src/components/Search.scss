@@ -3,13 +3,14 @@
   padding-left: 10%;
 
   .search-bar {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.404);
     border: 1px solid rgb(107, 106, 106);
     border-radius: 6px;
-    padding-left: 15px;
+    padding-left: 17px;
     width: 90%;
-    height: 1.7rem;
+    height: 1.9rem;
     outline: none;
-    
+    font-size: 17px;
+
   }
 }
